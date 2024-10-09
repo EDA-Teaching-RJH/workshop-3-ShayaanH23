@@ -1,21 +1,14 @@
-def login(users):
- while True:
-    username = input("Please enter your username")
-    password = input("PLease enter a password")
+user_name = "admin"
+user_password = "password123"
 
-    for u in users:
-        if username == u[0]:
-            if password == [1]:
-                return "Access Granted"
-        else:
-                return "Access not granted"
+def login():
+    username = input("Please Enter your username: ")
+    password = input("Please Enter your password: ")
 
-    
-        
+    if username == user_name and password == user_password:
+        print("Access granted.")
+    else:
+        print("Acess Denied.")
 
-users = [["Shayaan", "Hasan223"], ["Askari", "A223"], ["Naqvi", "hh23"]]
-
-username = login(users)
-
-print(username, )
+login()
 
