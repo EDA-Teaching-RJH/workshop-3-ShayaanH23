@@ -1,14 +1,14 @@
 
 def what_is_the_price_of_the_ticket(age, student):
-    """Calculate the ticket price based on age and student status."""
+    
     if age < 12 or age >= 65:
-        return 5  # Children and seniors
+        return 5  
     elif 12 <= age <= 64 and student == "yes":
-        return 8  # Students
+        return 8  
     elif 12 <= age <= 64 and student == "no":
-        return 10  # Adults
+        return 10  
     else:
-        return None  # Invalid input
+        return None  
 
 def main():
     while True:
