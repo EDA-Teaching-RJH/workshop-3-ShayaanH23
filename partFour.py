@@ -8,7 +8,7 @@ def login():
     if username == user_name and password == user_password:
         print("Access granted.")
     else:
-        print("Acess Denied.")
+        print("Access Denied.")
 
 login()
 
